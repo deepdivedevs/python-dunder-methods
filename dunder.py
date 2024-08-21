@@ -27,3 +27,25 @@ class Point:
             return f"y: {self.y}"
         else:
             raise IndexError(f"key: {key} out of range")
+
+# See list of dunder methods here: https://docs.python.org/3/reference/datamodel.html
+a = Point(1, 2)
+b = Point(3, 4)
+
+# __str__ called
+print(a)
+
+# __add__ called
+print(a + b)
+
+# __sub__ called
+print(a - b)
+
+# __mul__ called
+print(a * b)
+
+# __eq__ called
+print(a == b)
+
+# __getitem__ called
+print(a[0])
